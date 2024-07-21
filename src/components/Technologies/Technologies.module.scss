@@ -1,0 +1,11 @@
+.dark {
+    width: 100%;
+
+    .technologies {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+}

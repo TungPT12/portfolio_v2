@@ -1,0 +1,59 @@
+@import "../../app/variable.scss";
+
+.dark {
+    background-color: $background_dark_theme;
+    position: fixed;
+    width: 100%;
+
+    .header {
+        width: 1200px;
+        background-color: $background_dark_theme;
+        margin: auto;
+        display: flex;
+        height: 100px;
+        padding: 10px 0px;
+        height: 54px;
+        justify-content: space-between;
+
+        .logo {
+            height: 100%;
+
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
+
+        .links_wrapper {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+
+
+
+            .link {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+
+                a {
+                    color: $text_title_dark_theme;
+                }
+
+                &:hover {
+                    .border_line {
+                        width: 100%;
+                        align-self: start;
+                    }
+                }
+
+                .border_line {
+                    transition: width 0.19s linear;
+                    height: 1px;
+                    width: 0%;
+                    background-color: $text_title_dark_theme;
+                }
+            }
+        }
+    }
+}

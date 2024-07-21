@@ -1,0 +1,56 @@
+@import '../../app/variable.scss';
+
+.dark {
+
+    .certificate {
+        background-color: $card_background_dark_theme;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 8px #5b5b5b;
+        overflow: hidden;
+        padding: 10px;
+
+        .image_certificate {
+            display: flex;
+            height: 235px;
+            overflow: hidden;
+            width: 100%;
+
+            picture {
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+
+        .wrapper_info {
+            width: 100%;
+
+
+            .certificate_name {
+                font-size: 18px;
+                padding: 0px 10px 10px 10px;
+                width: 100%;
+                display: block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: center;
+                color: $text_dark_theme;
+                font-weight: 500;
+                transition: all 0.1s linear;
+
+                &:hover {
+                    color: #551A8B;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

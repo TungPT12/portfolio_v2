@@ -1,0 +1,13 @@
+@import '../../app/variable.scss';
+
+.dark {
+    background-color: transparent;
+    height: 100%;
+    width: max-content;
+
+    .line {
+        width: 10px;
+        height: 100%;
+        background: $time_line;
+    }
+}

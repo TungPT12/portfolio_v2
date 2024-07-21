@@ -1,0 +1,40 @@
+@import "../../app/variable.scss";
+
+.dark {
+    background-color: $background_dark_theme;
+
+    .copy_right {
+        background-color: $background_dark_theme;
+        padding: 10px 0px;
+        width: 1200px;
+        margin: 0px auto;
+
+        .content {
+            height: 24px;
+            display: flex;
+            gap: 4px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            img {
+                height: 100%;
+                width: auto;
+            }
+
+            p {
+                font-size: 14px;
+                color: $text_title_dark_theme;
+                font-weight: 600;
+            }
+
+            span {
+                font-size: 14px;
+                background: $text_author;
+                background-clip: text;
+                color: transparent;
+                font-weight: 600;
+            }
+        }
+    }
+}

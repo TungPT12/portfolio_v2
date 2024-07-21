@@ -1,0 +1,124 @@
+@import '../../app/variable.scss';
+
+.dark {
+    background-color: $background_dark_theme;
+
+    .project {
+        background-color: $background_dark_theme;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 44px;
+        border-radius: 4px;
+
+        .background_project {
+            height: 100%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .project_info {
+            bottom: 0px;
+            background: $text_title_dark_theme;
+            gap: 14px;
+            display: flex;
+            flex-direction: column;
+            transition: max-height 0.4s linear;
+            max-height: calc(0px + 44px);
+
+            &:hover {
+                max-height: 300px;
+            }
+
+            .title {
+                background-color: #FFD700;
+                color: $text_dark_theme;
+                font-weight: 600;
+                padding: 10px 10px;
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+            .description {
+                padding: 0px 20px;
+                font-size: 16px;
+                color: $text_dark_theme;
+                font-weight: 400;
+            }
+
+            .technologies {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+
+                .technology {
+                    background-color: $text_title_dark_theme;
+                    padding: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 4px;
+                    border-radius: 4px;
+
+                    p {
+                        color: $text_dark_theme;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+
+                    img {
+                        height: 24px;
+                    }
+                }
+            }
+
+            .link_project {
+                padding: 0px 20px 16px 20px;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    // background-color: $text_dark_theme;
+                    height: 40px;
+                    padding: 10px;
+                    gap: 4px;
+                    border-radius: 4px;
+                    display: flex;
+                    border-radius: 50px;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        box-shadow: 0px 0px 10px #34353a;
+                        transform: translateY(-4px);
+                    }
+
+                    p {
+                        color: $text_dark_theme;
+                        font-weight: 500;
+                        font-size: 16px;
+                        text-transform: capitalize;
+                        text-decoration: underline;
+                    }
+
+                    picture {
+                        height: 100%;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}

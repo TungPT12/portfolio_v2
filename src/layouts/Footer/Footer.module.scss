@@ -1,0 +1,98 @@
+@import "../../app/variable.scss";
+
+.dark {
+    background-color: $background_dark_theme;
+
+    .footer {
+        background-color: $background_dark_theme;
+        padding: 20px 0px;
+        border-top: 1px solid #ffffff1a;
+        width: 1200px;
+        display: flex;
+        gap: 20px;
+        margin: 0px auto;
+        border-bottom: 1px solid #ffffff1a;
+
+        .footer_col {
+            flex: 1;
+            display: flex;
+            gap: 14px;
+            flex-direction: column;
+
+            h5 {
+                font-weight: 500;
+                color: $text_title_dark_theme;
+                font-size: 24px;
+            }
+
+            .text_thanks {
+                color: $text_title_dark_theme;
+                font-size: 14px;
+            }
+
+            .middle_col {
+                flex: 1;
+                display: flex;
+                gap: 14px;
+                flex-direction: column;
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    .middle_col {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                    }
+
+                    .phone_number,
+                    .email,
+                    .address {
+                        height: 21px;
+                        display: flex;
+                        gap: 8px;
+
+                        .wrapper_icon {
+                            img {
+                                height: 100%;
+                                width: auto;
+                            }
+                        }
+
+                        a,
+                        p {
+                            color: $text_title_dark_theme;
+                            font-size: 14px;
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                }
+            }
+
+            .logo_and_socials {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                justify-content: space-between;
+
+                picture {
+                    height: 50px;
+
+                    img {
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

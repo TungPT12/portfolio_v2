@@ -1,0 +1,49 @@
+@import '../../app/variable.scss';
+
+.dark {
+    background-color: $background_dark_theme;
+
+    .work_experience {
+        background-color: $background_dark_theme;
+        width: 1200px;
+        margin: auto;
+        padding: 40px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .title {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            h3 {
+                font-weight: 700;
+                font-size: 48px;
+                color: $text_title_dark_theme;
+                line-height: normal;
+            }
+
+            p {
+                font-size: 32px;
+                color: $text_dark_theme;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+        }
+
+        .experience_wrapper {
+            position: relative;
+
+            .time_line {
+                height: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

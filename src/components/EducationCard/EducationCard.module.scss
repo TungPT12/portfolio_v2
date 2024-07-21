@@ -1,0 +1,52 @@
+@import "../../app/variable.scss";
+
+.dark {
+    .education_card {
+        display: flex;
+        background-color: $card_background_dark_theme;
+        gap: 20px;
+        border-radius: 4px;
+        overflow: hidden;
+        gap: 32px;
+
+        .image_school {
+            flex: 1;
+        }
+
+        .education_info {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            padding: 12px 0px;
+            gap: 12px;
+
+            .degree_name {
+                font-size: 28px;
+                text-align: start;
+                color: $text_dark_theme;
+            }
+
+            .degree_info {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                .row_info {
+                    .title {
+                        flex: 1;
+                        color: $primary_text_dark_theme;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+
+                    .description {
+                        flex: 6;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $text_dark_theme;
+                    }
+                }
+            }
+        }
+    }
+}
