@@ -10,20 +10,18 @@ const Header = () => {
 
   const themeLogo = (theme: string) => {
     return theme === "dark" ? (
-      <Link href="#home">
-        <img src="/assets/images/logo/thantung2_white.svg" alt="logo" />
-      </Link>
+      <img src="/assets/images/logo/thantung2_white.svg" alt="logo" />
     ) : (
-      <Link href="#home">
-        <img src="/assets/images/logo/thantung2_black.svg" alt="logo" />
-      </Link>
+      <img src="/assets/images/logo/thantung2_black.svg" alt="logo" />
     );
   };
 
   return (
     <div className={`${styles[theme]}`}>
       <div className={`${styles["header"]}`}>
-        <picture className={`${styles["logo"]}`}>{themeLogo(theme)}</picture>
+        <picture className={`${styles["logo"]}`}>
+          <Link href="#home">{themeLogo(theme)}</Link>
+        </picture>
         <div className={`${styles["links_wrapper"]}`}>
           <div className={`${styles["link"]}`}>
             <Link href="#educations">Educations</Link>

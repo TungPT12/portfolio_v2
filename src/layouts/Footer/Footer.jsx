@@ -29,9 +29,9 @@ function Footer() {
                                 <p className={`${styles['text_info']}`}>0988486443</p>
                             </div>
                             <div className={`${styles['email']}`}>
-                                <div className={`h-full ${styles['wrapper_icon']}`}>
-                                    <img src='/assets/images/icons/mail_them_dark.svg' />
-                                </div>
+                                <picture className={`h-full ${styles['wrapper_icon']}`}>
+                                    <img alt="mail" src='/assets/images/icons/mail_them_dark.svg' />
+                                </picture>
                                 <a href="mailto:phamthanhtung12.work@gmail.com" className={`${styles['text_info']}`}>phamthanhtung12.work@gmail.com</a>
                             </div>
                             <div className={`${styles['address']}`}>
