@@ -10,7 +10,9 @@ function CopyRight() {
             <div className={`${styles['copy_right']}`}>
                 <div className={`${styles['content']}`}>
                     <p>&copy; Make with by</p>
-                    <img src='/assets/images/icons/heart_red.svg' />
+                    <picture>
+                        <img alt='copyright' src='/assets/images/icons/heart_red.svg' />
+                    </picture>
                     <span className={`${styles['author']}`}>Pham Thanh Tung</span>
                 </div>
                 {/* <div className={`${styles['content']}`}>

@@ -13,7 +13,7 @@ function Footer() {
         <div className={`${styles[theme]}`}>
             <div className={`${styles['footer']}`}>
                 <div className={`${styles['footer_col']}`}>
-                    <h5>Thanh Tung's Portfolio</h5>
+                    <h5>Thanh Tung&#39;s Portfolio</h5>
                     <div className={`color_text ${styles['text_thanks']}`}>
                         Thank you for visiting my personal portfolio website. Connect with me over socials.
                     </div>

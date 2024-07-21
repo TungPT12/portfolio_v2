@@ -15,7 +15,7 @@ function Banner() {
           <p>I am Front-end Developer</p>
         </div>
         <picture>
-          <img src="/assets/images/avatar/developer_banner.svg" />
+          <img alt="banner" src="/assets/images/avatar/developer_banner.svg" />
         </picture>
       </div>
     </div>

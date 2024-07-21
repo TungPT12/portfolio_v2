@@ -9,7 +9,7 @@ function CardTechnology({ image, name }: { image: string; name: string }) {
     <div className={`${styles[theme]}`}>
       <div className={`${styles["card_technology"]}`}>
         <picture className={`${styles["tech_logo"]} block`}>
-          <img src={image} />
+          <img src={image} alt={name} />
         </picture>
         <p>{name}</p>
       </div>
