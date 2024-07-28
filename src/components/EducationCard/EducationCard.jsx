@@ -2,11 +2,14 @@
 import React, { useContext } from 'react';
 import styles from './EducationCard.module.scss'
 import ThemeContext from '@/providers/themes/themeContext';
+import useFadeInFadeOut from '@/hooks/useFadeInFadeOut';
+import { setFadeInFadeOut } from '@/utils/FadeInFadeOut';
 
 const EducationCard = () => {
+    const [isInViewCardEdu, loadingTimeCardEdu, targetElCardEdu] = useFadeInFadeOut({ threshold: 0.7, rootMargin: "0px" });
     const { theme } = useContext(ThemeContext)
     return (
-        <div className={`${styles[theme]}`}>
+        <div ref={targetElCardEdu} className={`${styles[theme]} animationEffectFadeInFadeOut ${setFadeInFadeOut(isInViewCardEdu, loadingTimeCardEdu)}`}>
             <div className={`${styles['education_card']}`}>
                 <picture className={`block ${styles['image_school']}`}>
                     <img src='/assets/images/educations/fpt-university.jpg' alt={"fpt"} />

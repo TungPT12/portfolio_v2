@@ -3,8 +3,11 @@ import React, { useContext } from 'react';
 import styles from './Certificates.module.scss';
 import Certificate from '@/components/Certificate/Certificate';
 import ThemeContext from '@/providers/themes/themeContext';
+import useFadeInFadeOut from '@/hooks/useFadeInFadeOut';
+import { setFadeInFadeOut } from '@/utils/FadeInFadeOut';
 
 function Certificates() {
+    const [isInViewTitle, loadingTimeTitle, targetElTitle] = useFadeInFadeOut({ threshold: 0.7, rootMargin: "0px" });
 
     const { theme } = useContext(ThemeContext);
 
@@ -40,7 +43,7 @@ function Certificates() {
     return (
         <div id='certificates' className={`${styles[theme]}`}>
             <div className={`${styles['certificates']}`}>
-                <h3 className={`${styles['title']} color_text`}>Certificates</h3>
+                <h3 ref={targetElTitle} className={`${styles['title']} animationEffectFadeInFadeOut color_text ${setFadeInFadeOut(isInViewTitle, loadingTimeTitle)}`}>Certificates</h3>
                 <div className={`${styles['certificates_list']}`}>
                     {renderCertificates(certificates)}
                 </div>

@@ -23,6 +23,22 @@
                 letter-spacing: -1px;
                 word-spacing: -5px;
                 line-height: 70px;
+
+                &:nth-child(1) {
+                    transition: opacity 1s linear 0s, transform 1s ease-out 0s;
+                }
+
+                &:nth-child(2) {
+                    transition: opacity 1s linear 0.2s, transform 1s ease-out 0.2s;
+                }
+
+                &:nth-child(3) {
+                    transition: opacity 1s linear 0.4s, transform 1s ease-out 0.4s;
+                }
+
+                &:nth-child(4) {
+                    transition: opacity 1s linear 0.6s, transform 1s ease-out 0.6s;
+                }
             }
 
             .name {

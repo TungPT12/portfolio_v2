@@ -27,3 +27,17 @@ body {
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
+
+.animationEffectFadeInFadeOut {
+  transition: opacity 1.5s linear, transform 1s ease-out;
+}
+
+.beforeFadeInFadeOut {
+  opacity: 0;
+  transform: translateY(140px);
+}
+
+.fadeInFadeOut {
+  opacity: 1;
+  transform: translateY(0);
+}
